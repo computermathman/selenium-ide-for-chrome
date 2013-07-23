@@ -19,26 +19,16 @@
   <script type="text/javascript" charset="utf-8" src="../scripts/ide/format/java/android_driver_for_scirocco_cloud_formatter.js"></script>
   <script type="text/javascript" charset="utf-8" src="../scripts/ide/code_generator.js"></script>
   <script type="text/javascript" charset="utf-8" src="../scripts/ide/ide_view.js"></script>
+  <script type="text/javascript" charset="utf-8" src="../scripts/ide/init.js"></script>
   <link rel="stylesheet" type="text/css" href="../stylesheets/ide.css" >
   <link rel="stylesheet" type="text/css" href="../stylesheets/ui-lightness/jquery-ui.css" >
   <link rel="stylesheet" type="text/css" href="../stylesheets/superfish/superfish.css" >
   <link rel="stylesheet" type="text/css" href="../stylesheets/superfish/superfish-vertical.css" >
   <link rel="stylesheet" type="text/css" href="../stylesheets/superfish/superfish-navbar.css" >
-  
-  
-  <script type="text/javascript">
 
-    function init() {
-      chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
-        IDEViewInstance.addNewCommand(request.command, request.target, request.value);
-        sendResponse({})
-      });
-    }
-
-  </script>
 
 </head>
-<body onbeforeunload="save()" onload="init();">
+<body>
 
 <div id="scide">
   <ul id="menu" class="sf-menu">

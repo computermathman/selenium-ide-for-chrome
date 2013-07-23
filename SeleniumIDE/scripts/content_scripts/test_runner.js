@@ -69,6 +69,7 @@ var TestRunner = function() {
         $obj = $("[name=" + row.target.value + "]");
         break;
       default:
+        $obj = $(row.target.value);
       }
     }
 
